@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Rofi Web Search
+Exec=rofi -dmenu -p "Search>" | xargs -I{}  xdg-open https://www.google.com/search?q={}
+Icon=rofi
+Type=Application

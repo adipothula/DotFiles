@@ -1,0 +1,30 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "network",
+    "pulseaudio",
+    "custom/bluetooth",
+    "custom/lock",
+    "tray"
+  ],
+  "clock": {
+    "format": "{:%a %b %d, %H:%M}"
+  },
+  "custom/lock": {
+    "exec": "echo 🔒",
+    "interval": 999999,
+    "on-click": "hyprlock"
+  },
+  "pulseaudio": {
+    "format": " {volume}%",
+    "on-click": "pavucontrol"
+  },
+  "network": {
+    "format-wifi": " {}",
+    "format-ethernet": " {}",
+    "format-disconnected": " {}"
+  }
+}
